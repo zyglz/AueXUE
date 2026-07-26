@@ -20,7 +20,7 @@ const showPassword = ref(false)
 const error = ref<string | null>(null)
 const submitting = ref(false)
 
-const siteTitle = 'AIOVTUE-雪'
+const siteTitle = 'Tidus-Blog'
 const siteSubtitle = '记录生活 · 分享热爱'
 
 async function loadRememberedCredentials() {

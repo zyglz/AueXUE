@@ -10,16 +10,16 @@ linkGroups:
     links:
       - url: https://daily.yybb.us/
         avatar: https://r2tc.20030327.xyz/file/博客/主题/1780655293662_avatar_me.jpg.PNG
-        name: AIOVTUE-雪
-        blog: AIOVTUE-雪
+        name: Tidus-Blog
+        blog: Tidus-Blog
         desc: 这和本站是一样的架构哦~
         color: "#0078e7"
         siteshot: https://r2tc.20030327.xyz/file/博客/友链/1782106866919_1780909850378_1780909790262.jpg
      
-      - url: https://yybb.us
+      - url: https://blog.ttdd.top/
         avatar: https://r2tc.20030327.xyz/file/博客/主题/1780655293662_avatar_me.jpg.PNG
-        name: AIOVTUE's blog
-        blog: AIOVTUE's blog
+        name: Tidus's blog
+        blog: Tidus's blog
         desc: 这个使用的是Notionnext哦~
         color: "#0078e7"
         siteshot: https://r2tc.20030327.xyz/file/博客/友链/1782106889251_1782106583220.jpg

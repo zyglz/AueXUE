@@ -109,7 +109,7 @@ async function copyYml() {
         </p>
         <ul class="friend-link-site-info__list">
           <li>
-            站点名称：<span class="friend-link-highlight">AIOVTUE-雪</span>
+            站点名称：<span class="friend-link-highlight">Tidus-Blog</span>
           </li>
           <li>
             站点链接：<span class="friend-link-highlight">https://live.yybb.us</span>

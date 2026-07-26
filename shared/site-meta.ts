@@ -3,7 +3,7 @@ export const siteMeta = {
   url: 'https://blog.ttdd.top',
   lang: 'zh-CN',
   title: 'Tidus',
-  subtitle: '雪',
+  subtitle: 'Blog',
   description: '雨是神的烟花',
   author: {
     name: 'Tidus',

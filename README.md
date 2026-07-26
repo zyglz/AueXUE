@@ -47,10 +47,10 @@
         </p>
         <ul class="friend-link-site-info__list">
           <li>
-            站点名称：<span class="friend-link-highlight">AIOVTUE-雪</span>
+            站点名称：<span class="friend-link-highlight">Tidus-Blog</span>
           </li>
           <li>
-            站点链接：<span class="friend-link-highlight">https://live.yybb.us</span>
+            站点链接：<span class="friend-link-highlight">https://blog.ttdd.top/</span>
           </li>
           <li>
             站长头像：<span class="friend-link-highlight">{{ siteInfo.avatar }}</span>

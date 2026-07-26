@@ -202,7 +202,7 @@ export default defineValaxyConfig({
   
     navbar: [...mainNavItems],
     navbarOptions: {
-      title: ['Tidus-', '雪'],   //顶栏和侧边栏文字
+      title: ['Tidus-', 'Blog'],   //顶栏和侧边栏文字
       subTitle: '雨是神的烟花',
       offset: 0,
       invert: ['home'],

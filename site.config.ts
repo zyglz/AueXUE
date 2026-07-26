@@ -6,8 +6,8 @@ export default defineSiteConfig({
   title: 'Tidus',
   subtitle: 'Td',
   author: {
-    name: 'AIOVTUE',
-    avatar: 'https://r2tc.20030327.xyz/file/博客/主题/1780655293662_avatar_me.jpg.PNG',   //站点头像
+    name: 'Tidus',  
+    avatar: 'https://image.zyglz.com/file/ttdd/2026/1785069105807.png',   //站点头像
     status: {
       emoji: '🌸',
       message: '发呆ing...',
