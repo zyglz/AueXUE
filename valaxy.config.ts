@@ -197,7 +197,7 @@ export default defineValaxyConfig({
         url: 'https://your-website.com',
         title: 'Your Name',
       },
-      icp: '<a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a>',    //页脚网站备案
+      icp: '<a href="https://icp.gov.moe/?keyword=99999998" target="_blank" rel="noopener">萌ICP备99999998号</a>',    //页脚网站备案
     }, 
   
     navbar: [...mainNavItems],
