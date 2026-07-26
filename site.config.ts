@@ -4,7 +4,7 @@ export default defineSiteConfig({
   url: 'https://blog.ttdd.top',
   lang: 'zh-CN',
   title: 'Tidus',
-  subtitle: 'Td',
+  subtitle: 'Blog',
   author: {
     name: 'Tidus',  
     avatar: 'https://image.zyglz.com/file/ttdd/2026/1785069105807.png',   //站点头像
@@ -13,7 +13,7 @@ export default defineSiteConfig({
       message: '发呆ing...',
       },
   },
-  description: 'Tidus的博客',
+  description: 'Tidus\'s blog',
 
   favicon: '/favicon.png',
 
