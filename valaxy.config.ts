@@ -161,7 +161,7 @@ export default defineValaxyConfig({
     
     
     hero: {
-      title: 'AIOVTUE',   //首页中间的文字
+      title: 'Tidus',   //首页中间的文字
       motto: '雨是神的烟花',
       urls: [
       '/hero/tt3.png', 
@@ -202,7 +202,7 @@ export default defineValaxyConfig({
   
     navbar: [...mainNavItems],
     navbarOptions: {
-      title: ['AIOVTUE-', '雪'],   //顶栏和侧边栏文字
+      title: ['Tidus-', '雪'],   //顶栏和侧边栏文字
       subTitle: '雨是神的烟花',
       offset: 0,
       invert: ['home'],
@@ -251,7 +251,7 @@ export default defineValaxyConfig({
 
   addons: [
     addonTwikoo({
-      envId: 'https://your-twikoo/',  //写你自己的twikoo评论地址
+      envId: 'https://jade-churros-b40fee.netlify.app/.netlify/functions/twikoo',  //写你自己的twikoo评论地址
     }),
     addonVercount({
       api: 'cn'   //访问统计
