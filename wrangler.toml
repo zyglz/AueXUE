@@ -1,5 +1,5 @@
 name = "zyglz-auexue-blog"   # 项目名，可以改
-compatibility_date = "2026-01-03"
+compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
@@ -13,4 +13,4 @@ binding = "BUCKET"   # 这个不能动
 bucket_name = "aiovtue-blog"   # 名字不一样也要改，最好一样
 
 [vars]
-SITE_URL = "https:/blog.ttdd.top"
+SITE_URL = "https://blog.ttdd.top"
