@@ -13,7 +13,7 @@ export default defineSiteConfig({
       message: '发呆ing...',
       },
   },
-  description: 'Tidus\'s blog',
+  description: 'Tidus的博客',
 
   favicon: '/favicon.png',
 
