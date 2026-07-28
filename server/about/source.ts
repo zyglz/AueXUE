@@ -3,11 +3,14 @@ import { serializeFrontmatter, splitMarkdown } from '../posts/frontmatter'
 import { renderMarkdown } from '../posts/render'
 
 function normalizeAboutFrontmatter(frontmatter: Record<string, unknown>) {
+  const now = new Date()
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`
   return {
     layout: 'post',
     title: frontmatter.title ? String(frontmatter.title) : '关于我',
     cover: frontmatter.cover ? String(frontmatter.cover) : undefined,
-    date: frontmatter.date ? String(frontmatter.date) : undefined,
+    date: frontmatter.date ? String(frontmatter.date) : today,
     updated: frontmatter.updated ? String(frontmatter.updated) : undefined,
     comment: frontmatter.comment === true ? true : undefined,
   }

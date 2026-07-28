@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { runContentUpdated } from 'valaxy'
 import { useDynamicAbout } from '../../composables/useDynamicAbout'
+import { setDynamicPostFrontmatter } from '../../composables/useDynamicPostFrontmatter'
 import { applyCodeBlockFold } from '../../utils/collapseCode'
 
 const route = useRoute()
@@ -14,10 +15,14 @@ const mergedFrontmatter = computed(() => {
     return { title: '关于我', layout: 'post' }
 
   const fm = aboutData.value.frontmatter
+  const now = new Date()
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const today = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`
   return {
     ...fm,
     title: fm.title || '关于我',
     layout: 'post',
+    date: fm.date || today,
   }
 })
 
@@ -25,6 +30,7 @@ function applyRouteFrontmatter() {
   if (!aboutData.value)
     return
   route.meta.frontmatter = mergedFrontmatter.value
+  setDynamicPostFrontmatter(mergedFrontmatter.value)
 }
 
 async function afterContentRender() {
@@ -47,6 +53,10 @@ function onContentMounted() {
 onMounted(async () => {
   await loadAbout()
   applyRouteFrontmatter()
+})
+
+onUnmounted(() => {
+  setDynamicPostFrontmatter(null)
 })
 
 watch(aboutData, () => {
