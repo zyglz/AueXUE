@@ -109,19 +109,19 @@ async function copyYml() {
         </p>
         <ul class="friend-link-site-info__list">
           <li>
-            站点名称：<span class="friend-link-highlight">Tidus-Blog</span>
+            站点名称：<span class="friend-link-highlight">{{ siteInfo.name }}</span>
           </li>
           <li>
-            站点链接：<span class="friend-link-highlight">https://live.yybb.us</span>
+            站点链接：<span class="friend-link-highlight">{{ siteInfo.url }}</span>
           </li>
           <li>
             站长头像：<span class="friend-link-highlight">{{ siteInfo.avatar }}</span>
           </li>
           <li>
-            站点描述：<span class="friend-link-highlight">雨滴会记录生命中的每一个瞬间</span>
+            站点描述：<span class="friend-link-highlight">{{ siteInfo.desc }}</span>
           </li>
           <li>
-            站点截图：<span class="friend-link-highlight">https://r2tc.20030327.xyz/file/博客/主题/1780909850378_1780909790262.png</span>
+            站点截图：<span class="friend-link-highlight">{{ siteInfo.siteshot }}</span>
           </li>
         </ul>
       </div>
