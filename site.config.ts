@@ -7,7 +7,7 @@ export default defineSiteConfig({
   subtitle: 'Blog',
   author: {
     name: 'Tidus',  
-    avatar: 'https://image.zyglz.com/file/ttdd/2026/1785069105807.png',   //站点头像
+    avatar: 'https://image.ttdd.top/file/ttdd/2026/1785572130483.png',   //站点头像
     status: {
       emoji: '🌸',
       message: '发呆ing...',
