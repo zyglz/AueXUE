@@ -22,9 +22,12 @@ const frontmatter = computed(() => {
     }
   }
 
+  // API 未返回有效 cover 时保留 md frontmatter 里的封面，避免 cover 被覆盖为空
+  const { cover: dynamicCover, ...restFrontmatter } = dynamic.frontmatter
   return {
     ...base,
-    ...dynamic.frontmatter,
+    ...restFrontmatter,
+    ...(dynamicCover ? { cover: dynamicCover } : {}),
     albums: dynamic.albums,
   }
 })
