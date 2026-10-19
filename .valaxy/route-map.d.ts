@@ -226,7 +226,7 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-sakura@0.10.2__26c2e4e40056577f3391180093fd2e8a/node_modules/valaxy-theme-sakura/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-sakura@0.10.2_@nuxt+kit@3.21.7_magicast@0.5.3__valaxy-addon-hitokoto@0.0.1_valax_v4ixchpuuhjdgxybmuisuaznli/node_modules/valaxy-theme-sakura/pages/index.vue': {
       routes:
         | '/'
       views:
@@ -234,7 +234,7 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'node_modules/.pnpm/valaxy@0.28.10_@babel+parse_e723e6f6577794aae27ebf6e37c7027b/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@0.28.10_@babel+parser@7.29.7_@nuxt+kit@3.21.7_magicast@0.5.3__@types+markdown-it@14.1._ps6luszqb6x5cbf6lpzb4w3y6e/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -402,7 +402,7 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-sakura@0.10.2__26c2e4e40056577f3391180093fd2e8a/node_modules/valaxy-theme-sakura/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-sakura@0.10.2_@nuxt+kit@3.21.7_magicast@0.5.3__valaxy-addon-hitokoto@0.0.1_valax_v4ixchpuuhjdgxybmuisuaznli/node_modules/valaxy-theme-sakura/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:

@@ -3,7 +3,6 @@ import { addonVercount } from 'valaxy-addon-vercount'
 import { addonMeting } from 'valaxy-addon-meting'
 import { addonHitokoto } from 'valaxy-addon-hitokoto'
 import { addonTwikoo } from 'valaxy-addon-twikoo'
-import { vaFoucLoader } from './plugins/va-fouc-loader'
 import { disableSsgHydration } from './plugins/disable-ssg-hydration'
 import { albumWebdavConfigPlugin } from './plugins/album-webdav-config'
 import { albumWebdavProxy } from './plugins/album-webdav-proxy'
@@ -12,7 +11,6 @@ import { dynamicPostsDevApi } from './plugins/dynamic-posts-dev-api'
 import { excludePagesPostsMd } from './plugins/exclude-pages-posts-md'
 import { excludeThemePaginationPage } from './plugins/exclude-theme-pagination-page'
 import { patchVercountNoPeer } from './plugins/patch-vercount-no-peer'
-import siteConfig from './site.config'
 import { mainNavItems, iconSafelist } from './shared/nav-icons'
 
 const themePrimary = '#DF9193'   //主题色
@@ -58,12 +56,7 @@ export default defineValaxyConfig({
   },
 
   vite: {
-    plugins: [patchVercountNoPeer(), twikooLocalPlugin(), excludePagesPostsMd(), excludeThemePaginationPage(), albumWebdavConfigPlugin(), albumWebdavProxy(), dynamicPostsDevApi(), disableSsgHydration(), vaFoucLoader({
-      avatar: '/favicon.png',
-      title: siteConfig.title,
-      subtitle: siteConfig.subtitle,
-      primary: themePrimary,
-    })],
+    plugins: [patchVercountNoPeer(), twikooLocalPlugin(), excludePagesPostsMd(), excludeThemePaginationPage(), albumWebdavConfigPlugin(), albumWebdavProxy(), dynamicPostsDevApi(), disableSsgHydration()],
   },
 
   modules: {
@@ -160,28 +153,14 @@ export default defineValaxyConfig({
     
     
     
+    // 首页已取消 hero 横幅（图片/视频背景与播放器），直接显示首页内容
+    // 若需恢复，请同时删除 components/SakuraHomeLayout.vue（其对主题 SakuraHomeLayout 的覆盖）
     hero: {
       title: 'Tidus',   //首页中间的文字
       motto: '雨是神的烟花',
-      urls: [
-      '/hero/tt3.png', 
-      '/hero/hero-1.jpg',
-      '/hero/hero-2.png',
-      '/hero/hero-3.jpg',
-      '/hero/hero-1.mp4',
-      '/hero/hero-2.mp4',
-      '/hero/tt1.png', 
-      '/hero/tt2.png', 
-      ],
-      randomUrls: true,
-      // 自定义视频播放器
-      playerUrl: '/hero/player.mp4',
-      style: 'dot', // 使用扫描线效果
-      fixedImg: true, // 固定背景图片
       typewriter: true, // 启用打字机效果
       enableHitokoto: true, // 启用一言
       socialStyle: 'merge', // 一言下方显示社交图标
-      waveTheme: 'horizontal', // 设置水平波纹主题
     },
     
   postFooter: {
@@ -205,9 +184,8 @@ export default defineValaxyConfig({
       title: ['Tidus-', 'Blog'],   //顶栏和侧边栏文字
       subTitle: '雨是神的烟花',
       offset: 0,
-      invert: ['home'],
+      // 首页已取消 hero 横幅，导航栏保持常规显示（invert/autoHide 勿设为 ['home']）
       showMarker: false,
-      autoHide: ['home'],
       // 勿设置 tools：Sakura 主题在检测到 tools 后会清空默认工具栏
     },
 

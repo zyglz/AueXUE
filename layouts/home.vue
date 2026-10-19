@@ -17,5 +17,6 @@ watch(pageIndex, (value) => {
 </script>
 
 <template>
+  <!-- 首页不渲染 hero 横幅：由 components/SakuraHomeLayout.vue 覆盖主题组件实现 -->
   <SakuraHomeLayout />
 </template>
