@@ -167,4 +167,14 @@ const albums = computed(() => galleryHub.value?.albums || [])
   color: inherit;
   text-shadow: 2px 2px 10px black;
 }
+
+// 相册页标题不显示 { } 花括号装饰（SakuraTitle 在无封面时默认加 sakura-braced-text）
+.sakura-gallery-page .sakura-header-title .sakura-braced-text {
+  padding-inline: 0;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
 </style>
