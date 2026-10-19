@@ -96,35 +96,18 @@ export default defineValaxyConfig({
       title: '公告栏',    //公告栏不支持在这里改了，集成到后台管理了
       sections: [
         {
-          label: '--- 主域名 ---',
+          label: '',
           lines: [
-            'daily.yybb.us',
-            'daily.20030327.xyz',
+            '',
+            '',
             // 也支持对象：{ text: '显示文字', url: 'https://example.com' }
           ],
         },
         {
-          label: '--- 备用域名 ---',
+          label: '',
           lines: [
-            '这里改没有用',
+            '',
           ],
-        },
-      ],
-    },
-    // 导航页「随机网站跳转」抽卡视频：weight 越大越容易抽到
-    navigation: {
-      randomDrawVideos: [
-        {
-          url: '/img/1.mp4',
-          weight: 1,
-        },
-        {
-          url: '/img/2.mp4',
-          weight: 2,
-        },
-        {
-          url: '/img/3.mp4',
-          weight: 3,
         },
       ],
     },
