@@ -2,24 +2,24 @@
   "title": "公告栏",
   "sections": [
     {
-      "label": "--- 主域名 ---",
+      "label": "",
       "lines": [
         {
-          "text": "daily.yybb.us"
+          "text": ""
         },
         {
-          "text": "daily.20030327.xyz"
+          "text": ""
         }
       ]
     },
     {
-      "label": "--- 一些话 ---",
+      "label": "",
       "lines": [
         {
-          "text": "可以改成自己的公告哦"
+          "text": ""
         },
         {
-          "text": "记得修改上面的域名"
+          "text": ""
         }
       ]
     }

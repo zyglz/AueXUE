@@ -6,9 +6,9 @@ cover: "hero/hero-2.png"
 comment: true
 linkGroups:
   - name: 紧密相连
-    desc: 下面都是 AIOVTUE-雪 自己的网站哦，还有，建议这里只放八个哦~
+    desc: 下面都是 Tidus 的网站哦，建议这里只放八个哦~
     links:
-      - url: https://daily.yybb.us/
+      - url: https://www.ttdd.top/
         avatar: https://r2tc.20030327.xyz/file/博客/主题/1780655293662_avatar_me.jpg.PNG
         name: Tidus-Blog
         blog: Tidus-Blog
