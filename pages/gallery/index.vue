@@ -6,12 +6,15 @@ import { useDynamicGallery } from '../../composables/useDynamicGallery'
 const route = useRoute()
 const { galleryHub, hubLoading, loadGalleryHub } = useDynamicGallery()
 
+const PAGE_COVER = '/hero/tt3.png'
+
 const mergedFrontmatter = computed(() => {
   if (!galleryHub.value) {
     return {
       title: '相册',
       icon: 'i-ri-gallery-line',
       layout: 'gallery',
+      cover: PAGE_COVER,
     }
   }
 
@@ -21,6 +24,7 @@ const mergedFrontmatter = computed(() => {
     title: fm.title || '相册',
     icon: fm.icon || 'i-ri-gallery-line',
     layout: 'gallery',
+    cover: fm.cover || PAGE_COVER,
   }
 })
 
