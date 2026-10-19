@@ -7,6 +7,9 @@ import AlbumTimeline from '../AlbumTimeline.vue'
 const staticFrontmatter = useFrontmatter()
 const { galleryHub, loadGalleryHub } = useDynamicGallery()
 
+// 相册页封面：动态配置未提供时兜底使用页面封面，避免头图与标题装饰异常
+const GALLERY_PAGE_COVER = '/hero/tt3.png'
+
 onMounted(() => {
   void loadGalleryHub()
 })
@@ -18,6 +21,7 @@ const frontmatter = computed(() => {
   if (!dynamic) {
     return {
       ...base,
+      cover: base.cover || GALLERY_PAGE_COVER,
       albums: [],
     }
   }
@@ -27,7 +31,7 @@ const frontmatter = computed(() => {
   return {
     ...base,
     ...restFrontmatter,
-    ...(dynamicCover ? { cover: dynamicCover } : {}),
+    cover: dynamicCover || base.cover || GALLERY_PAGE_COVER,
     albums: dynamic.albums,
   }
 })
